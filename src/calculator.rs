@@ -10,6 +10,7 @@ pub fn calculate(input: &mut str) -> Result<String, String> {
         .filter(|c| !c.is_whitespace())
         .collect::<Vec<char>>();
 
+    // TODO: merge this two loops
     for t in terms.clone() {
         if t == '(' {
             let index = terms.iter().position(|el| el == &t).unwrap();
