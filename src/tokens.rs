@@ -1,5 +1,3 @@
-use std::i32;
-
 // change that shit later
 #[derive(Debug)]
 pub enum Operators {
@@ -7,7 +5,6 @@ pub enum Operators {
     Minus,
     Times,
     Division,
-    Parenthesis,
     Invalid,
 }
 
